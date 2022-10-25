@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+        <CheckBoxPreference
+            android:defaultValue="0"
+            android:key="key_status"
+            android:title="Hide completed tasks"
+            android:summary="Enable to hide completed task" />
+
+        <ListPreference
+            android:title="Categories"
+            android:key="key_categories"
+            android:entries="@array/pref_categories"
+            android:entryValues="@array/pref_categories"
+            android:summary=""/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Other">
+        <CheckBoxPreference
+            android:defaultValue="0"
+            android:key="key_sort"
+            android:title="Sort tasks by date"
+            android:summary="" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
